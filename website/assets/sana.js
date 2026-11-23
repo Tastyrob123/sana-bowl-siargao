@@ -98,7 +98,12 @@
         bereit(e.target, function () { e.target.classList.add('da'); if (e.target.classList.contains('zahl')) zaehlen(e.target); });
       });
     }, { rootMargin: '0px 0px 12% 0px' });
-    D.querySelectorAll('[data-r],[data-schlitz]').forEach(function (e) { io.observe(e); });
+    /* Bowl-Fotos (Startseite «Base and toppings», Menü-Karten): erst starten, wenn sie gut im Bild sind, damit man das Schweben und Zoomen sieht (Robert 23.11.2026) */
+    var spaet = '.brett>[data-r], .formen__raster>[data-r]';
+    var io2 = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (!e.isIntersecting) return; io2.unobserve(e.target); bereit(e.target, function () { e.target.classList.add('da'); }); });
+    }, { rootMargin: '0px 0px -22% 0px' });
+    D.querySelectorAll('[data-r],[data-schlitz]').forEach(function (e) { if (e.matches(spaet)) io2.observe(e); else io.observe(e); });
   }
   D.addEventListener('sana:bereit', function () { if (D.fonts) D.fonts.ready.then(auftritte); else auftritte(); });
   /* 3c Gleiten (Vorlage Bareiss): jedes Foto wandert beim Scrollen sacht in seinem Rahmen, im Takt des Scrollens (Scroll-Zeitachse) */
