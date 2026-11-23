@@ -181,4 +181,10 @@
     D.addEventListener('visibilitychange', start);
     start();
   }
+  /* Menü am Handy, aus der Vorlage Bareiss (bareiss.js Teil 5) */
+  var mk = D.querySelector('.leiste__menu'), mv = D.querySelector('.vollmenu');
+  if (mk && mv) {
+    mk.addEventListener('click', function () { var auf = !H.classList.contains('menu-auf'); H.classList.toggle('menu-auf', auf); mk.setAttribute('aria-expanded', auf); });
+    mv.addEventListener('click', function (e) { if (e.target.closest('a') || e.target === mv) { H.classList.remove('menu-auf'); mk.setAttribute('aria-expanded', 'false'); } });
+  }
 })();
