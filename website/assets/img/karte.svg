@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" font-family="Fredoka, 'Avenir Next', sans-serif">
+  <!-- Handgezeichnete Karte General Luna, Tourism Road. Lage aus Google Maps (Plus Code): SanaBowl Q5P6+9G -->
+  <defs>
+    <filter id="hand" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency=".018" numOctaves="2" seed="7"/><feDisplacementMap in="SourceGraphic" scale="7"/></filter>
+    <pattern id="wellen" width="60" height="26" patternUnits="userSpaceOnUse"><path d="M4 16 q11 -10 22 0 t22 0" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" opacity=".55"/></pattern>
+  </defs>
+  <rect width="900" height="1100" fill="#f7f2ea"/>
+  <!-- Meer -->
+  <g filter="url(#hand)">
+    <path d="M610 0 C 600 120, 640 150, 660 210 C 690 300, 610 380, 590 470 C 570 560, 600 650, 575 740 C 555 820, 590 900, 560 980 C 545 1030, 560 1070, 555 1100 L 900 1100 L 900 0 Z" fill="#d7e6ee"/>
+    <path d="M610 0 C 600 120, 640 150, 660 210 C 690 300, 610 380, 590 470 C 570 560, 600 650, 575 740 C 555 820, 590 900, 560 980 C 545 1030, 560 1070, 555 1100" fill="none" stroke="#3b2464" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <rect x="640" y="0" width="260" height="1100" fill="url(#wellen)" opacity=".9"/>
+  <!-- Palmen-Andeutungen -->
+  <g fill="none" stroke="#7a5fb3" stroke-width="3.5" stroke-linecap="round" filter="url(#hand)" opacity=".75">
+    <path d="M300 420 q8 -40 4 -70 M304 350 q-26 -6 -40 8 M304 350 q24 -10 40 2 M304 350 q-8 -22 -26 -28 M304 350 q12 -22 30 -24"/>
+    <path d="M190 690 q8 -40 4 -70 M194 620 q-26 -6 -40 8 M194 620 q24 -10 40 2 M194 620 q-8 -22 -26 -28 M194 620 q12 -22 30 -24"/>
+    <path d="M380 140 q8 -40 4 -70 M384 70 q-26 -6 -40 8 M384 70 q24 -10 40 2 M384 70 q-8 -22 -26 -28 M384 70 q12 -22 30 -24"/>
+  </g>
+  <!-- Tourism Road -->
+  <g filter="url(#hand)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M150 1010 C 240 975, 330 930, 420 892 C 470 870, 480 820, 482 760 C 486 640, 470 540, 488 430 C 500 350, 505 270, 520 205 C 530 140, 532 70, 540 0" stroke="#3b2464" stroke-width="16"/>
+    <path d="M150 1010 C 240 975, 330 930, 420 892 C 470 870, 480 820, 482 760 C 486 640, 470 540, 488 430 C 500 350, 505 270, 520 205 C 530 140, 532 70, 540 0" stroke="#f7f2ea" stroke-width="4" stroke-dasharray="14 16"/>
+  </g>
+  <text x="436" y="610" fill="#3b2464" font-size="28" font-weight="500" transform="rotate(-86 436 610)" letter-spacing="2">TOURISM ROAD</text>
+  <!-- General Luna -->
+  <text x="150" y="1060" fill="#3b2464" font-size="40" font-weight="500">General Luna</text>
+  <!-- SanaBowl -->
+  <g transform="translate(470 840)">
+    <path d="M0 0 C -42 -48, -54 -76, -54 -100 C -54 -132, -30 -156, 0 -156 C 30 -156, 54 -132, 54 -100 C 54 -76, 42 -48, 0 0 Z" fill="#3b2464"/>
+    <g transform="translate(-24 -126) scale(.75)" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 26 C 6 42, 18 52, 32 52 C 46 52, 58 42, 58 26"/>
+      <path d="M32 40 C 22 34, 18 22, 26 10 C 30 4, 34 4, 38 10 C 46 22, 42 34, 32 40 Z"/>
+    </g>
+  </g>
+  <text x="300" y="766" fill="#3b2464" font-size="44" font-weight="500" text-anchor="end">sanabowl</text>
+  <text x="300" y="872" fill="#6e6577" font-size="22" text-anchor="end">Tourism Rd, Purok 5</text>
+  <!-- Norden -->
+  <g transform="translate(110 330)" fill="none" stroke="#3b2464" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#hand)">
+    <path d="M0 40 L 0 -40 M -16 -18 L 0 -40 L 16 -18"/>
+  </g>
+  <text x="110" y="410" fill="#3b2464" font-size="30" font-weight="500" text-anchor="middle">N</text>
+</svg>

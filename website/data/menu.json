@@ -1,0 +1,140 @@
+{
+  "quelle": "Kartentafeln von SanaBowl (Google-Maps-Fotos, Kategorie Menu, abgerufen 22.11.2026): _Material/google2/h10.jpg (Smoothie Bowls), _Material/google/g04.jpg (Poke/Rice), _Material/karte/k20.jpg (Toasts), _Material/karte/k19.jpg (Shakes), _Material/karte/k05.jpg (Coffee, Sweets, Drinks). Preise in Philippinischen Peso. Offensichtliche Tippfehler der Tafeln berichtigt.",
+  "gruppen": [
+    {
+      "id": "smoothie-bowls",
+      "titel": "Smoothie Bowls",
+      "art": "bowl",
+      "gerichte": [
+        {"name": "Organic Açai", "preis": 455, "base": ["Authentic Brazilian organic açai", "Banana", "Blueberries", "Vegan milk"], "toppings": ["Banana", "Blueberries", "Granola", "Shredded coconut"]},
+        {"name": "Mangolicious", "preis": 390, "base": ["Mango", "Banana", "Papaya", "Vegan milk"], "toppings": ["Banana", "Mango", "Granola", "Chia seed"]},
+        {"name": "Blue Moon", "preis": 390, "base": ["Banana", "Mango", "Butterfly pea (edible flower)", "Vegan milk"], "toppings": ["Banana", "Blueberries", "Granola", "Shredded coconut"]},
+        {"name": "Pink Paradise", "preis": 390, "base": ["Dragon fruit", "Strawberry", "Banana", "Vegan milk"], "toppings": ["Banana", "Granola", "Chia seed"]},
+        {"name": "Creamy Coconut", "preis": 390, "base": ["Coconut", "Vanilla whey protein or vegan protein", "Vegan milk"], "toppings": ["Banana", "Granola", "Cacao nibs", "Shredded coconut"]},
+        {"name": "Cocoa Banana", "preis": 390, "base": ["Cocoa", "Banana", "Peanut butter", "Vegan milk"], "toppings": ["Banana", "Granola", "Cacao nibs", "Dates"]}
+      ],
+      "extras_titel": "Add-ons",
+      "extras": [
+        {"name": "Granola", "preis": 50}, {"name": "Peanut butter", "preis": 40}, {"name": "Honey", "preis": 40},
+        {"name": "Shredded coconut", "preis": 40}, {"name": "Almonds", "preis": 50}, {"name": "Walnuts", "preis": 50},
+        {"name": "Pumpkin seed", "preis": 40}, {"name": "Cacao nibs", "preis": 40}, {"name": "Dates", "preis": 40},
+        {"name": "Oreo cookies", "preis": 40}, {"name": "Vanilla whey protein", "preis": 70}, {"name": "Vegan protein", "preis": 60},
+        {"name": "Creatine powder", "preis": 60}, {"name": "Collagen powder", "preis": 60}
+      ]
+    },
+    {
+      "id": "poke-bowls",
+      "titel": "Poke Bowls",
+      "art": "teller",
+      "gerichte": [
+        {"name": "Sanabowl Special", "preis": 450, "text": "Fresh tuna, mango, rice, cucumber, carrots, dried seaweed, cabbage, topped with the mix of mayo and sesame oil"},
+        {"name": "Spicy Tuna Ahi", "preis": 420, "text": "Fresh tuna, rice, carrots, cucumber, mango, dried seaweed, topped with the mix of mayo, sriracha and sesame oil"}
+      ]
+    },
+    {
+      "id": "rice-bowls",
+      "titel": "Rice Bowls",
+      "art": "teller",
+      "gerichte": [
+        {"name": "Pan Seared Tuna", "preis": 450, "text": "Tuna, mango, rice, cucumber, carrots, dried seaweed, cabbage, topped with the mix of mayo and sesame oil"},
+        {"name": "Pan Seared Spicy Tuna", "preis": 420, "text": "Tuna, rice, carrots, cucumber, mango, dried seaweed, topped with the mix of mayo, sriracha and sesame oil"},
+        {"name": "Moringa Pesto Chicken", "preis": 360, "text": "Chicken, rice, moringa mix with mayo"}
+      ],
+      "extras_titel": "Add-ons",
+      "extras": [
+        {"name": "Tuna", "preis": 100}, {"name": "Chicken", "preis": 80}, {"name": "Rice", "preis": 40},
+        {"name": "Mango", "preis": 50}, {"name": "Avocado (seasonal)", "preis": 50}, {"name": "Egg", "preis": 50}
+      ]
+    },
+    {
+      "id": "toasts",
+      "titel": "Toasts",
+      "art": "teller",
+      "gerichte": [
+        {"name": "Smoked Salmon with Cream Cheese", "preis": 390, "text": "Savory smoked salmon served on sourdough bread, topped with tangy capers and creamy cream cheese"},
+        {"name": "Moringa Pesto Chicken Toast", "preis": 340, "text": "Grilled chicken served on sourdough bread, topped with a homemade pesto sauce infused with the superfood moringa"},
+        {"name": "Mushroom Omelette Toast", "preis": 335, "text": "Shiitake mushroom, cream cheese and 2 eggs served on sourdough bread"},
+        {"name": "Avocado with Sundried Tomato Toast", "preis": 335, "saison": true, "text": "Classic avocado served on sourdough bread with tangy sundried tomato on top"},
+        {"name": "Avocado and Eggs Toast", "preis": 350, "saison": true, "text": "Classic avocado served on sourdough bread with 2 scrambled eggs on top"},
+        {"name": "Nutella, Banana, Frozen Strawberry & Oreo Toast", "preis": 295, "text": "Creamy nutella spread generously on sourdough bread, topped with sliced bananas, frozen strawberries and crushed oreo cookies"}
+      ],
+      "extras_titel": "Add-ons",
+      "extras": [
+        {"name": "Sourdough bread", "preis": 80}, {"name": "Shiitake mushroom", "preis": 50}, {"name": "Tomato", "preis": 30},
+        {"name": "Egg", "preis": 50}, {"name": "Cream cheese", "preis": 50}, {"name": "Avocado (seasonal)", "preis": 50}
+      ]
+    },
+    {
+      "id": "smoothie-shakes",
+      "titel": "Smoothie Shakes",
+      "art": "teller",
+      "gerichte": [
+        {"name": "Organic Açai", "preis": 265, "text": "Authentic Brazilian organic açai, banana, blueberries, vegan milk"},
+        {"name": "Mangolicious", "preis": 230, "text": "Mango, banana, papaya, vegan milk"},
+        {"name": "Blue Moon", "preis": 230, "text": "Banana, mango, butterfly pea (edible flower), vegan milk"},
+        {"name": "Pink Paradise", "preis": 230, "text": "Dragon fruit, strawberry, banana, vegan milk"},
+        {"name": "Creamy Coconut", "preis": 230, "text": "Coconut, vanilla whey protein or vegan protein, vegan milk"},
+        {"name": "Cocoa Banana", "preis": 230, "text": "Cocoa, banana, peanut butter, vegan milk"}
+      ]
+    },
+    {
+      "id": "protein-shakes",
+      "titel": "Protein Shakes",
+      "art": "teller",
+      "gerichte": [
+        {"name": "Organic Açai", "preis": 290, "text": "Vanilla whey or vegan protein, authentic Brazilian organic açai, banana, blueberries, vegan milk"},
+        {"name": "Mangolicious", "preis": 290, "text": "Vanilla whey or vegan protein, mango, banana, papaya, vegan milk"},
+        {"name": "Blue Moon", "preis": 290, "text": "Vanilla whey or vegan protein, banana, mango, butterfly pea (edible flower), vegan milk"},
+        {"name": "Pink Paradise", "preis": 290, "text": "Vanilla whey or vegan protein, dragon fruit, strawberry, banana, vegan milk"},
+        {"name": "Creamy Coconut", "preis": 290, "text": "Vanilla whey or vegan protein, coconut, banana, vegan milk"},
+        {"name": "Cocoa Banana", "preis": 290, "text": "Vanilla whey or vegan protein, cocoa, banana, peanut butter, vegan milk"}
+      ],
+      "extras_titel": "Add-ons",
+      "extras": [
+        {"name": "Creatine", "preis": 60}, {"name": "Collagen", "preis": 60}, {"name": "Pre-workout", "preis": 60}
+      ]
+    },
+    {
+      "id": "coffee",
+      "titel": "Coffee",
+      "art": "heiss-kalt",
+      "gerichte": [
+        {"name": "Espresso", "heiss": 100}, {"name": "Cortado", "heiss": 110},
+        {"name": "Americano", "heiss": 120, "kalt": 125}, {"name": "Cappuccino", "heiss": 150, "kalt": 155},
+        {"name": "Latte", "heiss": 150, "kalt": 155}, {"name": "Spanish Latte", "heiss": 160, "kalt": 165},
+        {"name": "Caramel Macchiato", "heiss": 170, "kalt": 175}, {"name": "Mocha", "heiss": 160, "kalt": 165},
+        {"name": "Vanilla Latte", "heiss": 160, "kalt": 165}, {"name": "Dirty Matcha", "heiss": 170, "kalt": 175},
+        {"name": "Salted Caramel", "heiss": 170, "kalt": 175}
+      ]
+    },
+    {
+      "id": "non-coffee",
+      "titel": "Non Coffee",
+      "art": "heiss-kalt",
+      "gerichte": [
+        {"name": "Chocolate", "heiss": 140, "kalt": 150}, {"name": "Matcha Latte", "heiss": 140, "kalt": 150}
+      ],
+      "extras_titel": "Add-ons",
+      "extras": [
+        {"name": "Fresh milk", "preis": 40}, {"name": "Oat milk", "preis": 50}, {"name": "Soya milk", "preis": 50}
+      ]
+    },
+    {
+      "id": "sweets",
+      "titel": "Sweets",
+      "art": "kurz",
+      "gerichte": [
+        {"name": "Chocolate Chip Cookie", "preis": 130}, {"name": "Red Velvet Cookie", "preis": 130}
+      ]
+    },
+    {
+      "id": "drinks",
+      "titel": "Drinks",
+      "art": "kurz",
+      "gerichte": [
+        {"name": "San Miguel Pilsen", "preis": 100}, {"name": "San Miguel Apple", "preis": 100}, {"name": "San Miguel Light", "preis": 100},
+        {"name": "Honey Lemon Dou", "preis": 120}, {"name": "Devil Lemon Dou", "preis": 120}, {"name": "Coke Zero", "preis": 90}, {"name": "Coke Regular", "preis": 90}
+      ]
+    }
+  ]
+}
