@@ -635,13 +635,3 @@ body:has(.tlk--baender) .leiste.weg{transform:translateY(calc(-100% - 24px))}
 .posten li:has(.posten__b) .posten__k{flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:7px}
 .posten li:has(.posten__b) .preis{font:300 14px/1 var(--text);letter-spacing:.14em;color:var(--lila)}
 .posten li:has(.posten__b) p{text-align:center}
-/* Bowl-Fotos: deutlicher hereinschweben und in den Rahmen zoomen, langsam und weich (Robert 23.11.2026) */
-.js .brett>[data-r],.js .formen__raster>[data-r]{--weg:clamp(110px,10vw,170px);transition-duration:1.9s,1.9s}
-.js .brett>[data-r="b"]{scale:.94}
-.js .formen__raster>[data-r="b"]{scale:.94}
-.js main section:not(.auftakt):not(.skopf) .brett .rahmen img,.js .fkarte .fkarte__b img{scale:1.24;transition:scale 2.6s var(--ein)}
-.js main section:not(.auftakt):not(.skopf) .brett .rahmen.da img,.js .fkarte.da .fkarte__b img{scale:1.02}
-@media (prefers-reduced-motion:reduce){.js .brett>[data-r],.js .formen__raster>[data-r]{translate:none;scale:none}.js main section .brett .rahmen img,.js .fkarte .fkarte__b img{scale:none!important}}
-.js .brett>[data-r].da,.js .formen__raster>[data-r].da{scale:none}
-.js .brett>[data-r],.js .formen__raster>[data-r]{transition-timing-function:cubic-bezier(.22,.9,.3,1)}
-.js main section:not(.auftakt):not(.skopf) .brett .rahmen img,.js .fkarte .fkarte__b img{transition-timing-function:cubic-bezier(.22,.9,.3,1)}

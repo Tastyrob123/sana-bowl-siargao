@@ -78,9 +78,6 @@
       });
     });
     /* Bowl-Brett: Reihe für Reihe von links nach rechts */
-    D.querySelectorAll('.brett>[data-r]').forEach(function (e, k) { e.style.setProperty('--i', k % 3); });
-    /* Bowl-Karten im Menü: schweben Reihe für Reihe herein, das Foto zoomt in die Karte (Robert 23.11.2026) */
-    D.querySelectorAll('.formen__raster>[data-r]').forEach(function (e, k) { e.style.setProperty('--i', k % 3); });
     D.querySelectorAll('.bowl__belag').forEach(function (b) { [].forEach.call(b.children, function (s, k) { s.style.setProperty('--k', k); }); });
   }
   function auftritte() {
@@ -98,12 +95,12 @@
         bereit(e.target, function () { e.target.classList.add('da'); if (e.target.classList.contains('zahl')) zaehlen(e.target); });
       });
     }, { rootMargin: '0px 0px 12% 0px' });
-    /* Bowl-Fotos (Startseite «Base and toppings», Menü-Karten): erst starten, wenn sie gut im Bild sind, damit man das Schweben und Zoomen sieht (Robert 23.11.2026) */
-    var spaet = '.brett>[data-r], .formen__raster>[data-r]';
-    var io2 = new IntersectionObserver(function (es) {
-      es.forEach(function (e) { if (!e.isIntersecting) return; io2.unobserve(e.target); bereit(e.target, function () { e.target.classList.add('da'); }); });
-    }, { rootMargin: '0px 0px -22% 0px' });
-    D.querySelectorAll('[data-r],[data-schlitz]').forEach(function (e) { if (e.matches(spaet)) io2.observe(e); else io.observe(e); });
+    /* Bowl-Fotos wie das Bilder-Brett beim Hotel Bareiss (bareiss.js, iof): knapp vor dem Rand, ohne Staffelung, beim Hereinkommen sichtbar hoch (Robert 23.11.2026) */
+    var FRUEH = '.brett>[data-r], .formen__raster>[data-r]';
+    var iof = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (!e.isIntersecting && e.boundingClientRect.bottom >= 0) return; iof.unobserve(e.target); bereit(e.target, function () { e.target.classList.add('da'); }); });
+    }, { rootMargin: '0px 0px 6% 0px', threshold: 0 });
+    D.querySelectorAll('[data-r],[data-schlitz]').forEach(function (e) { if (e.matches(FRUEH)) { e.style.setProperty('--i', 0); iof.observe(e); } else io.observe(e); });
   }
   D.addEventListener('sana:bereit', function () { if (D.fonts) D.fonts.ready.then(auftritte); else auftritte(); });
   /* 3c Gleiten (Vorlage Bareiss): jedes Foto wandert beim Scrollen sacht in seinem Rahmen, im Takt des Scrollens (Scroll-Zeitachse) */
