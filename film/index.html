@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#26173f">
+<title>SanaBowl Siargao · Website</title>
+<meta property="og:title" content="SanaBowl Siargao · Website">
+<meta property="og:image" content="poster.jpg">
+<link rel="icon" href="../website/assets/img/zeichen.svg">
+<link rel="preload" href="poster.jpg" as="image">
+<style>
+/* Vorlage: CEV Siargao/film/index.html, im Kleid der SanaBowl-Website */
+@font-face{font-family:"Rund";src:url(../website/assets/fonts/fredoka.woff2) format("woff2");font-weight:300 700;font-display:block}
+@font-face{font-family:"Karte";src:url(../website/assets/fonts/montserrat.woff2) format("woff2");font-weight:100 900;font-display:block}
+:root{--violett:#3b2464;--tief:#26173f;--nacht:#1b1030;--flieder:#ece6f4;--mango:#f2b33a;--weiss:#fff}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;background:var(--tief);color:var(--weiss)}
+body{min-height:100svh;display:flex;flex-direction:column;align-items:center;font:400 16px/1.5 "Karte",system-ui,sans-serif;-webkit-font-smoothing:antialiased;
+  padding:max(20px,env(safe-area-inset-top)) clamp(16px,4vw,64px) max(20px,env(safe-area-inset-bottom))}
+.kopf{width:100%;max-width:1360px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:6px 0 clamp(18px,2.4vw,32px)}
+.marke{display:flex;align-items:center;gap:10px;color:var(--weiss);text-decoration:none}
+.marke svg{width:clamp(30px,2.6vw,38px);height:auto}
+.marke span{font:500 clamp(25px,2.3vw,32px)/1 "Rund",sans-serif;letter-spacing:-.01em}
+.knopf{display:inline-flex;align-items:center;gap:12px;padding:6px 6px 6px 18px;border-radius:999px;text-decoration:none;white-space:nowrap;
+  font:500 14px/1 "Karte",sans-serif;letter-spacing:.01em;background:#fff;color:var(--violett);
+  box-shadow:0 1px 0 rgba(255,255,255,.7) inset,0 10px 26px -12px rgba(10,4,24,.8),0 2px 6px -2px rgba(10,4,24,.4)}
+.knopf i{flex:none;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--violett);color:#fff;
+  box-shadow:inset 0 -3px 6px rgba(0,0,0,.25),inset 0 2px 3px rgba(255,255,255,.18)}
+.knopf svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+main{width:100%;max-width:1360px;flex:1;display:flex;flex-direction:column;justify-content:center}
+.film{position:relative;width:100%;aspect-ratio:1920/1206;border-radius:clamp(14px,1.8vw,26px);overflow:hidden;background:var(--violett) url(poster.jpg) center/cover;
+  box-shadow:0 0 0 1px rgba(236,230,244,.14),0 40px 70px -40px rgba(0,0,0,.7),0 2px 6px rgba(0,0,0,.35)}
+.film video{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;background:transparent}
+.titel{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:clamp(18px,2vw,28px)}
+.titel h1{margin:0;font:500 clamp(32px,4.2vw,64px)/1 "Rund",sans-serif;letter-spacing:-.01em;color:var(--weiss)}
+.titel h1 span{color:var(--mango)}
+.titel p{margin:0;font-size:15px;color:rgba(236,230,244,.72)}
+footer{width:100%;max-width:1360px;padding-top:clamp(22px,3vw,40px);font-size:13px;color:rgba(236,230,244,.5);text-align:center}
+@media (max-width:700px){
+  main{justify-content:center;padding-bottom:6vh}
+  .film{width:calc(100% + 32px);margin:0 -16px;border-radius:0}
+  .titel{margin-top:22px}
+  .titel h1{font-size:clamp(36px,11vw,54px)}
+  .titel p{font-size:16px}
+  .knopf{padding:5px 5px 5px 14px;font-size:13px}
+}
+</style>
+</head>
+<body>
+<header class="kopf">
+  <a class="marke" href="../website/index.html" aria-label="SanaBowl"><svg viewBox="0 0 64 56" aria-hidden="true"><path d="M6 26 C 6 42, 18 52, 32 52 C 46 52, 58 42, 58 26" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M32 40 C 22 34, 18 22, 26 10 C 30 4, 34 4, 38 10 C 46 22, 42 34, 32 40 Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/></svg><span>sanabowl</span></a>
+  <a class="knopf" href="../website/index.html">Open the website<i><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5"/></svg></i></a>
+</header>
+<main>
+  <div class="film">
+    <video autoplay muted loop playsinline webkit-playsinline preload="auto" poster="poster.jpg" controls disablepictureinpicture>
+      <source src="sanabowl-website-handy.mp4" type="video/mp4" media="(max-width: 900px)">
+      <source src="sanabowl-website.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="titel">
+    <h1>SanaBowl <span>Superfood Café</span></h1>
+    <p>A walk through the new SanaBowl website</p>
+  </div>
+</main>
+<footer>Designstudie von Tasty Studios, nicht die offizielle Website.</footer>
+<script>
+(function(){var v=document.querySelector('video');if(!v)return;
+// läuft von selbst: stumm, im Bild, Endlosschleife; startet erneut, falls der Browser das automatische Abspielen zunächst anhält
+function los(){var p=v.play();if(p&&p.catch)p.catch(function(){})}
+v.addEventListener('loadeddata',los);document.addEventListener('visibilitychange',function(){if(!document.hidden)los()});
+document.addEventListener('touchstart',los,{once:true,passive:true});})();
+</script>
+<script src="../website/assets/besuch.js?v=1795435987" defer></script>
+</body>
+</html>
