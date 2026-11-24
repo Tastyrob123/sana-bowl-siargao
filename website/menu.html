@@ -10,10 +10,10 @@
 <link rel="icon" href="assets/img/zeichen.svg">
 <link rel="preload" href="assets/fonts/fredoka.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="assets/sana.css?v=1795521480">
-<script src="assets/sana.js?v=1795521480" defer></script>
-<script src="assets/ruecksprung.js?v=1795521480" defer></script>
-<script src="assets/besuch.js?v=1795521480" defer></script>
+<link rel="stylesheet" href="assets/sana.css?v=1795522034">
+<script src="assets/sana.js?v=1795522034" defer></script>
+<script src="assets/ruecksprung.js?v=1795522034" defer></script>
+<script src="assets/besuch.js?v=1795522034" defer></script>
 </head>
 <body class="seite-karte">
 <header class="leiste">
@@ -89,6 +89,6 @@
   </div>
   <div class="fuss__unten"><span>© SanaBowl Superfood Café, Siargao</span><span>Designstudie von Tasty Studios, nicht die offizielle Website.</span></div>
 </footer>
-<script>/* sobald das erste Bild steht, laden alle uebrigen Bilder sofort im Hintergrund */addEventListener('load',function(){[].forEach.call(document.querySelectorAll('img[loading=lazy]'),function(i){i.loading='eager'})})</script>
+<script>/* sobald das erste Bild steht, laden alle uebrigen Bilder sofort im Hintergrund */(function(){function alle(){[].forEach.call(document.querySelectorAll('img[loading=lazy]'),function(i){i.loading='eager'})}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',alle);else alle()})()</script>
 </body>
 </html>
